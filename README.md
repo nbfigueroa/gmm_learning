@@ -26,6 +26,6 @@ Download the following toolboxes and make sure it's in the MATLAB path: [some ot
 If you want to do regression on the learnt models, follow: ```demo_gmr.m```
 
 
-[1] Calinon...
+[1] Code provided by Sylvain Calinon. 
 [2] MixEst...
 [3] Some dude
