@@ -1,6 +1,7 @@
 # gmm_learning
 
 My little toolbox for learning Gaussian Mixture Models with different inference methods in MATLAB.
+
 -
 
 If you are only interested in the EM method + Model Selection (BIC/AIC + CV) you do not need any external toolbox and can go directly to the demo ```gmm_em.m```.
