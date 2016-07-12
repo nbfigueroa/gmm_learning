@@ -25,9 +25,8 @@ Download the following toolboxes and make sure it's in the MATLAB path: [some ot
 #### Gaussian Mixture Regression
 If you want to do regression on the learnt models, follow: ```demo_gmr.m```
 
+-
 
-[1] Code provided by Sylvain Calinon. 
-
-[2] MixEst...
-
-[3] Some dude
+  [1] Code provided by Sylvain Calinon. 
+  [2] MixEst...
+  [3] Some dude
