@@ -30,6 +30,6 @@ If you want to do regression on the learnt models, follow: ```demo_gmr.m```
 -
 
 Implementation and toolbox References:
-- [1] Code provided by Sylvain Calinon. 
+- [1] [Gaussian Mixture Model (GMM) - Gaussian Mixture Regression (GMR)](https://www.mathworks.com/matlabcentral/fileexchange/19630-gaussian-mixture-model--gmm--gaussian-mixture-regression--gmr-) Matlab toolbox by Sylvain Calinon. 
 - [2] Reshad Hosseini and Mohamadreza Mash'al "MixEst: An Estimation Toolbox for Mixture Models." [http://visionlab.ut.ac.ir/mixest](http://visionlab.ut.ac.ir/mixest)
 - [3] Some dude
