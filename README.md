@@ -21,7 +21,7 @@ Download the following toolbox and make sure it's in the MATLAB path: [MixEst](h
 You can test them with the following script: ```demo_gmm_compare.m```
 
 #### Non-Parametric
-Download the following toolboxes and make sure it's in the MATLAB path: [some other link]() and [some other link](). These toolboxes provide code for inference of the DP-GMM (Dirichlet Process) which is a realization of the Infinite Gaussian Mixture Model, which enable one to discover the number of Gaussian functions from the data, rather than doing model selection, hence the name *non-parametric inference*. I compare two inference methods for the DP-GMM, namely:
+Download the following toolboxes and make sure it's in the MATLAB path: [some other link]() and [some other link](). These toolboxes provide code for inference of the **DP-GMM** (Dirichlet Process), a realization of the Infinite Gaussian Mixture Model, which enable one to discover the number of Gaussian functions from the data, rather than doing model selection, hence the name *non-parametric inference*. I compare two inference methods for the DP-GMM, namely:
 
 - Variational Method for DP-GMM [3]: bla
 - MCMC Inference for DP-GMM [4]:     bli
