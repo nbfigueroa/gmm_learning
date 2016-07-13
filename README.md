@@ -9,7 +9,7 @@ If you are only interested in the EM method + Model Selection (BIC/AIC + CV) you
 
 ### Inference Methods
 #### Parametric:
-Download the following toolbox and make sure it's in the MATLAB path: [some link]()
+Download the following toolbox and make sure it's in the MATLAB path: [MixEst](https://github.com/utvisionlab/mixest)
 
 - EM [1]:  ```gmm_em.m```
 - CEM [2]: ```gmm_cem.m```
@@ -29,5 +29,5 @@ If you want to do regression on the learnt models, follow: ```demo_gmr.m```
 
 Implementation and toolbox References:
 - [1] Code provided by Sylvain Calinon. 
-- [2] MixEst...
+- [2] Reshad Hosseini and Mohamadreza Mash'al "MixEst: An Estimation Toolbox for Mixture Models." [http://visionlab.ut.ac.ir/mixest](http://visionlab.ut.ac.ir/mixest)
 - [3] Some dude
