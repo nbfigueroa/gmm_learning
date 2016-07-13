@@ -4,7 +4,7 @@ My little toolbox for learning Gaussian Mixture Models with different inference 
 
 -
 #### Gaussian Mixture Model Learning with EM
-If you are only interested in the standard EM (Expectation-Maximization) method [1] + Model Selection (BIC/AIC) you do not need any external toolbox and can go directly to the demo: ```simple_gmm_em.m```.
+If you are only interested in the standard EM (Expectation-Maximization) method [1] + Model Selection (BIC/AIC) you do not need any external toolbox and can go directly to the demo: ```demo_gmm_em.m```.
 
 #### Gaussian Mixture Regression
 If you want to do regression on the learnt models, follow: ```demo_gmr.m```. This works for any inference method.
@@ -13,18 +13,20 @@ If you want to do regression on the learnt models, follow: ```demo_gmr.m```. Thi
 
 ### Other Inference Methods
 #### Parametric:
-Download the following toolbox and make sure it's in the MATLAB path: [MixEst](https://github.com/utvisionlab/mixest)
+Download the following toolbox and make sure it's in the MATLAB path: [MixEst](https://github.com/utvisionlab/mixest). MixEst is a very nice MATLAB toolbox for mixture-model parameter estimation with extensive optimization capabilities. I compare two inference methods provided in this toolbox, namely:
 
-MixEst is a very nice MATLAB toolbox for mixture-model parameter estimation with extensive optimization capabilities.
+- EM [2]:  bla
+- CEM [2]: bli
 
-- EM [2]:  ```gmm_em.m```
-- CEM [2]: ```gmm_cem.m```
+You can test them with the following script: ```demo_gmm_compare.m```
 
 #### Non-Parametric
-Download the following toolboxes and make sure it's in the MATLAB path: [some other link]() and [some other link]()
+Download the following toolboxes and make sure it's in the MATLAB path: [some other link]() and [some other link](). These toolboxes provide code for inference of the DP-GMM (Dirichlet Process) which is a realization of the Infinite Gaussian Mixture Model, which enable one to discover the number of Gaussian functions from the data, rather than doing model selection, hence the name *non-parametric inference*. I compare two inference methods for the DP-GMM, namely:
 
-- Variational Method for DP-GMM [3]: ```dpgmm_vi.m```
-- MCMC Inference for DP-GMM [4]:     ```dpgmm_mcmc.m```
+- Variational Method for DP-GMM [3]: bla
+- MCMC Inference for DP-GMM [4]:     bli
+
+You can test them with the following script: ```demo_dpgmm_compare.m```
 
 -
 #### Implementation and toolbox References:
