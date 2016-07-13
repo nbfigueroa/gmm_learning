@@ -10,6 +10,7 @@ If you are only interested in the EM method + Model Selection (BIC/AIC + CV) you
 ### Inference Methods
 #### Parametric:
 Download the following toolbox and make sure it's in the MATLAB path: [MixEst](https://github.com/utvisionlab/mixest)
+
 MixEst is a very nice MATLAB toolbox for mixture-model parameter estimation.
 
 - EM [1]:  ```gmm_em.m```
