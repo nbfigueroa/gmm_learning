@@ -3,12 +3,13 @@
 My little toolbox for learning Gaussian Mixture Models with different inference methods in MATLAB.
 
 -
-
+#### Gaussian Mixture Model Learning with EM
 If you are only interested in the standard EM (Expectation-Maximization) method [1] + Model Selection (BIC/AIC) you do not need any external toolbox and can go directly to the demo: ```simple_gmm_em.m```.
 
 #### Gaussian Mixture Regression
 If you want to do regression on the learnt models, follow: ```demo_gmr.m```. This works for any inference method.
 
+#### Examples
 
 ### Other Inference Methods
 #### Parametric:
