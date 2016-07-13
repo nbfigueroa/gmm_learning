@@ -31,5 +31,5 @@ You can test them with the following script: ```demo_dpgmm_compare.m```
 -
 #### Implementation and toolbox References:
 - [1] [Gaussian Mixture Model (GMM) - Gaussian Mixture Regression (GMR)](https://www.mathworks.com/matlabcentral/fileexchange/19630-gaussian-mixture-model--gmm--gaussian-mixture-regression--gmr-) Matlab toolbox by Sylvain Calinon. 
-- [2] [MixEst: An Estimation Toolbox for Mixture Models.](http://visionlab.ut.ac.ir/mixest](http://visionlab.ut.ac.ir/mixest) by Reshad Hosseini and Mohamadreza Mash'al
+- [2] [MixEst: An Estimation Toolbox for Mixture Models.](http://visionlab.ut.ac.ir/mixest) by Reshad Hosseini and Mohamadreza Mash'al
 - [3] Some dude
