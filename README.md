@@ -6,7 +6,7 @@ My little toolbox for learning Gaussian Mixture Models with different inference 
 #### Gaussian Mixture Model Learning with EM
 If you are only interested in the standard EM (Expectation-Maximization) method  + Model Selection (BIC/AIC) you do not need any external toolbox and can go directly to the demo: ```demo_gmm_em.m```.
 
-Here, you can compare a GMM learned through EM [1] and through SEDS [2] for a set of 3D trajectories, and simulated the learned dynamics.
+Here, you can compare a GMM learned through EM [1] and through SEDS [2] for a set of 3D trajectories, and simulate the learned dynamics.
 
 -
 
