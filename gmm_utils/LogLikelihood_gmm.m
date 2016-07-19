@@ -16,6 +16,9 @@ function [ loglik ] = LogLikelihood_gmm(X,Priors,Mu,Sigma,w)
 N = size(X,2);
 K = size(Priors,2);
 
+if isempty(w)
+    w = ones(1,length(X));
+end
 
 Pxi = zeros(N,K);
 for i=1:K

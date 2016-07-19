@@ -56,11 +56,10 @@ GMM_LL  = zeros(1,length(K_range));
 % Training of GMM by EM algorithm, initialized by k-means clustering.
 for k=1:length(K_range)
     [Priors, Mu, Sigma] = EM_init_kmeans(Data, K_range(k),[]);
-    [Priors, Mu, Sigma] = EM(Data, Priors, Mu, Sigma);
-    w = ones(1,length(Data));
+    [Priors, Mu, Sigma] = EM(Data, Priors, Mu, Sigma);    
     GMM_BIC(1,k) = gmm_bic(Data,ones(1,length(Data)),Priors,Mu,Sigma,'full');
     GMM_AIC(1,k) = gmm_aic(Data,ones(1,length(Data)),Priors,Mu,Sigma,'full');
-    GMM_LL(1,k)  = LogLikelihood_gmm(Data,Priors,Mu,Sigma,w);
+    GMM_LL(1,k)  = LogLikelihood_gmm(Data,Priors,Mu,Sigma,[]);
 end
 
 %% Plot Results
