@@ -6,9 +6,8 @@ My little toolbox for learning Gaussian Mixture Models with different inference 
 #### Gaussian Mixture Model Learning with EM
 If you are only interested in the standard EM (Expectation-Maximization) method [1] + Model Selection (BIC/AIC) you do not need any external toolbox and can go directly to the demo: ```demo_gmm_em.m```.
 
-#### Gaussian Mixture Regression
-If you want to do regression on the learnt models, follow: ```demo_gmr.m```. This works for any inference method.
-
+-
+###TODO:
 #### Examples
 
 ### Other Inference Methods
