@@ -48,7 +48,7 @@ tol_cutting = 0.0001; % A threshold on velocity that will be used for trimming d
 
 %% Find Best Range of K to learn Position Dynamics with GMM
 % Training parameters
-K_range = [1:15]; %Number of Gaussian funcitons
+K_range = [1:10]; %Number of Gaussian functions
 GMM_BIC = zeros(1,length(K_range));
 GMM_AIC = zeros(1,length(K_range));
 GMM_LL  = zeros(1,length(K_range));
@@ -70,6 +70,7 @@ plot( K_range, GMM_BIC, '-*', 'Color', [rand rand rand]); hold on;
 plot( K_range, GMM_AIC,'-*', 'Color', [rand rand rand]); hold on;
 xlabel('K Gaussian Components')
 legend('BIC', 'AIC')
+title('Model Selection Criteria')
 grid on;
 axis square;
 
@@ -77,9 +78,9 @@ subplot(1,2,2)
 plot( K_range, GMM_LL, '-*', 'Color', [rand rand rand]);
 xlabel('K Gaussian Components')
 legend('LogLik')
+title('Model Likelihood')
 grid on;
 axis square;
-suptitle('Model Selection for Translational Mapping Function $\hat{f_x}(\xi_x)$','interpreter','latex')
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Now that you found the best model you can learn a GMM representation or SEDS
@@ -116,7 +117,7 @@ options.tol_stopping=10^-10;  % A small positive scalar defining the stoppping
 
 options.max_iter = 500;       % Maximum number of iteration for the solver [default: i_max=1000]
 
-options.objective = 'likelihood';    % 'likelihood': use likelihood as criterion to
+options.objective = 'mse';    % 'likelihood': use likelihood as criterion to
                               % optimize parameters of GMM
                               % 'mse': use mean square error as criterion to
                               % optimize parameters of GMM
