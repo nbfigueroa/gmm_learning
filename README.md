@@ -8,7 +8,6 @@ If you are only interested in the standard EM (Expectation-Maximization) method 
 
 -
 ##TODO before the summer!:
-
 ### Other Inference Methods
 #### Parametric:
 Download the following toolbox and make sure it's in the MATLAB path: [MixEst](https://github.com/utvisionlab/mixest). MixEst is a very nice MATLAB toolbox for mixture-model parameter estimation with extensive optimization capabilities. I compare two inference methods provided in this toolbox, namely:
