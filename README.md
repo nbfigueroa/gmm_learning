@@ -7,7 +7,7 @@ My little toolbox for learning Gaussian Mixture Models with different inference 
 If you are only interested in the standard EM (Expectation-Maximization) method [1] + Model Selection (BIC/AIC) you do not need any external toolbox and can go directly to the demo: ```demo_gmm_em.m```.
 
 -
-###<font color="red">TODO before the summer!:</font>
+<font color="red">TODO before the summer!:</font>
 
 ### Other Inference Methods
 #### Parametric:
