@@ -1,37 +1,32 @@
 # gmm_learning
 
-My little toolbox for learning Gaussian Mixture Models with different inference methods in MATLAB.
+My little toolbox for learning Gaussian Mixture Models with different inference methods in MATLAB. The derivations of each inference method are thorougly described in:
 
--
-#### Gaussian Mixture Model Learning with EM
-If you are only interested in the standard EM (Expectation-Maximization) method  + Model Selection (BIC/AIC) you do not need any external toolbox and can go directly to the demo: ```demo_gmm_em.m```.
+[1] Figueroa, N. and Billard, A. "Introduction to Bayesian Non-Parametrics for Gaussian Mixture Models and Hidden Markov Models" EPFL TECH-REPORT #XYZ.
 
-Here, you can compare a GMM learned through EM [1] and through SEDS [2] for a set of 3D trajectories, and simulate the learned dynamics.
+#### Finite Gaussian Mixture Model Learning with EM
+The implementation of the standard EM (Expectation-Maximization) method  + Model Selection (BIC/AIC) method for finite GMM parameter estimation is based on the implementation in [ML_toolbox](https://github.com/epfl-lasa/ML_toolbox). 
 
--
+You can test it with the following script:  ```demo_gmm_em.m```.
 
-###TODO before the summer!:
-#### Other Inference Methods
-##### Parametric:
-Download the following toolbox and make sure it's in the MATLAB path: [MixEst](https://github.com/utvisionlab/mixest). MixEst is a very nice MATLAB toolbox for mixture-model parameter estimation with extensive optimization capabilities. I compare two inference methods provided in this toolbox, namely:
+#### Bayesian Gaussian Mixture Model Learning with Collapsed Gibbs Sampling
+The implementation of the Bayesian GMM collapsed gibbs sampler was losely based on the following [tutorial](http://www.robots.ox.ac.uk/~fwood/teaching/AIMS_CDT_ML/homework/HW_3_sampling/). For implementation details, refer to [1].
 
-- EM [3]:  bla
-- CEM [3]: bli
+You can test it with the following script: ```demo_bgmm_gibbs.m```
 
-You can test them with the following script: ```demo_gmm_compare.m```
-
-##### Non-Parametric
-Download the following toolboxes and make sure it's in the MATLAB path: [some other link]() and [some other link](). These toolboxes provide code for inference of the **DP-GMM** (Dirichlet Process), a realization of the Infinite Gaussian Mixture Model, which enable one to discover the number of Gaussian functions from the data, rather than doing model selection, hence the name *non-parametric inference*. I compare two inference methods for the DP-GMM, namely:
-
-- Variational Method for DP-GMM [4]: bla
+#### Bayesian Non-Parametric (BNP) Gaussian Mixture Model Learning with Collapsed Gibbs Sampling
+Download the following toolboxes and make sure it's in the MATLAB path: [some other link](). These toolboxes provide code for inference of the **DP-GMM** (Dirichlet Process), a realization of the Infinite Gaussian Mixture Model, which enable one to discover the number of Gaussian functions from the data, rather than doing model selection, hence the name *non-parametric inference*:
 - MCMC Inference for DP-GMM [5]:     bli
 
-You can test them with the following script: ```demo_dpgmm_compare.m```
+You can test them with the following script: ```demo_dpgmm_gibbs.m```
+
+#### Dynamical System Learning Estimation via GMM
+Here, you can compare a GMM learned through either of the previous inference methods (EM, Sampler for Bayesian GMM with fixed K, Sampler for BNP GMM with unknown K) vs. SEDS [2] for a set of 3D trajectories, and simulate the learned dynamics.
+
 
 -
 #### Implementation and toolbox References:
-- [1] [Gaussian Mixture Model (GMM) - Gaussian Mixture Regression (GMR)](https://www.mathworks.com/matlabcentral/fileexchange/19630-gaussian-mixture-model--gmm--gaussian-mixture-regression--gmr-) Matlab toolbox by S. Calinon. 
-- [2] [SEDS](https://bitbucket.org/khansari/seds) Stable Estimator of Dynamical Systems with GMM by M. Khansari
-- [3] [MixEst: An Estimation Toolbox for Mixture Models.](http://visionlab.ut.ac.ir/mixest) by Reshad Hosseini and Mohamadreza Mash'al
-- [4] Some dude..
-- [5] Some other dude..
+- [1] Figueroa, N. and Billard, A. "Introduction to Bayesian Non-Parametrics for Gaussian Mixture Models and Hidden Markov Models" EPFL TECH-REPORT #XYZ.
+- [2] [ML_toolbox](https://github.com/epfl-lasa/ML_toolbox) Matlab toolbox used for teaching machine learning techniques at EPFL by N. Figueroa among others. 
+- [3] [SEDS](https://bitbucket.org/khansari/seds) Stable Estimator of Dynamical Systems with GMM by M. Khansari
+
