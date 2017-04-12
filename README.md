@@ -25,7 +25,7 @@ Here, you can compare a GMM learned through either of the previous inference met
 
 
 
-#### Implementation and toolbox References:
+#### Implementation and Toolbox References:
 - [1] Figueroa, N. and Billard, A. "Introduction to Bayesian Non-Parametrics for Gaussian Mixture Models and Hidden Markov Models" EPFL TECH-REPORT #XYZ.
 - [2] [ML_toolbox](https://github.com/epfl-lasa/ML_toolbox) Matlab toolbox used for teaching machine learning techniques at EPFL by N. Figueroa among others. 
 - [3] [SEDS](https://bitbucket.org/khansari/seds) Stable Estimator of Dynamical Systems with GMM by M. Khansari
