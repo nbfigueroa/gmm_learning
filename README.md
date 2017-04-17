@@ -20,7 +20,7 @@ Download the following toolboxes and make sure it's in the MATLAB path: [some li
 
 You can test them with the following script: ```demo_dpgmm_gibbs.m```
 
-#### Dynamical System Learning Estimation via GMM
+#### Dynamical System Learning via GMM
 Here, you can compare a GMM learned through either of the previous inference methods (EM, Sampler for Bayesian GMM with fixed K, Sampler for BNP GMM with unknown K) vs. SEDS [3] for a set of 3D trajectories, and simulate the learned dynamics.
 
 
